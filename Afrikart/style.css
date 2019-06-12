@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border: 0.5px solid blueviolet;
+}
+
+.section-exposition,
+.section-vogue{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.1vh 8vw;
+    margin-top: 5vh;
+}
+
+.section-vogue{
+    flex-direction: column;
+}
+
+.image-left{
+    flex-basis: 45%;
+    display: inline-flex;
+    height: auto;
+    align-items: center;
+}
+
+.description{
+    flex-basis: 55%;
+    display: inline-flex;
+    height: auto;
+    flex-direction: column;
+}
+
+.titre-desciption{
+    flex-grow: 1.5;
+}
+
+.text-desciption{
+    flex-grow: 3;
+}
+
+
+.button-desciption{
+    flex-grow: 1.5;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.titre-vogue{
+    height: 10vh;
+    width: 100%;
+}   
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-artiste .line:first-child img:first-child{
+    flex-basis: 66%;
+    margin: 0.33%;
+}
+
+.list-artiste .line:last-child img:first-child,
+.list-artiste .line:last-child img:nth-child(2),
+.list-artiste .line:last-child img:last-child,
+.list-artiste .line:first-child img:last-child{
+    flex-basis: 33%;
+    margin: 0.33%;
+}
+
+.section-best{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.best-seller{
+    display: flex;
+    max-width: 100%;
+    margin: 1.1vh 8vw;
+    padding: 1.1vh 0 1.1vh 20vw;
+    margin-top: 3vh;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: center;
+}
+
+.product-card {
+    margin: 1%;
+    flex-basis: calc(100% / 4);  
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.product-image{
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-best{
+    margin: 1.1vh 8vw;
+    height: 10vh;
+}
+
+.art-description{
+    height: 10vh;
+}
+
+.icone-author,
+.similaire{
+    height: 7vh;
+}
+
+.product-image,
+.dimension-reduction,
+.type-prix,
+.icone-author{
+    display: flex;
+}
+
+.author{
+    flex-basis: 70%;
+}
+
+.favorite,
+.icone-change{
+    flex-basis: 15%;
+}
+
+.nom-oeuvre,
+.dimension-reduction,
+.type-prix{
+    height: calc(10vh /3);
+}
+
+.dimension,
+.type{
+    flex-basis: 70%;
+}
+
+.redux,
+.prix{
+    flex-basis: 30%;
+}
