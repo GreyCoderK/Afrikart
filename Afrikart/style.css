@@ -38,6 +38,10 @@ div{
 
 .titre-desciption{
     flex-grow: 1.5;
+    padding: 3vw;
+    line-height: 7vh;
+    font-size: Arial,sans-serif;
+    flex-direction: column;
 }
 
 .text-desciption{
@@ -47,6 +51,8 @@ div{
 
 .button-desciption{
     flex-grow: 1.5;
+    justify-content: center;
+    align-items: center;
 }
 
 img{
@@ -55,8 +61,9 @@ img{
 }
 
 .titre-vogue{
-    height: 10vh;
     width: 100%;
+    line-height: 5vh;
+    padding: 1.2vw;
 }   
 
 .line{
@@ -96,11 +103,11 @@ img{
 
 .product-card {
     margin: 1%;
-    flex-basis: calc(100% / 4);  
+    min-width: calc(100% / 4);
     display: flex;
     flex-shrink: 0;
-    flex-grow: 1;
     flex-direction: column;
+    transform: translate(59vw); 
 }
 
 .product-image img {
@@ -162,4 +169,88 @@ img{
 .redux,
 .prix{
     flex-basis: 30%;
+}
+
+/********************
+*********************
+   ##########
+   ##########
+   ###       ##
+   ###       ##
+   ##########
+   #########
+   ###
+   ###
+   ###
+********************
+********************/
+.titre-desciption .first h2,
+.titre-desciption .second p,
+.titre-desciption .third p{
+    margin: 0;
+    padding: 0;
+}
+
+.description .text-desciption{
+    padding: 1.5vw;
+}
+
+.titre-desciption .first h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 2vw;
+    font-family: 'Apercubold',Arial,sans-serif;
+}
+
+.titre-desciption,
+.description,
+.button-desciption{
+    display: flex;
+    padding: 1.5vw;
+    width: 100%;
+}
+
+.button-desciption a:hover,
+.button-desciption a
+{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.titre{
+    font-size: 1.8vw;
+    text-overflow: ellipsis;
+    font-family: 'Apercubold','Arial','sans-serif';
+}
+
+.under-black,
+.under-black:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+  
+.under-black:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+  
+.under-black:hover:after {
+    width: 100%;
+}
+
+.list-artiste .line:first-child img:first-child::after{
+    content: 'Takeru Amano';
+    transition: 300ms;
+    font-size: 24px;
+    transform: translate(20%,20%);
+    z-index: 100;
+    color: #000;
 }
