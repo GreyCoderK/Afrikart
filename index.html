@@ -6,215 +6,1071 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700">
+    <link rel="stylesheet" href="docs/demo.css?ver=3.4.0">
+
     <title>AfrikArt</title>
+
 </head>
 <body>
-    <header>
-        <!--////   header top-->
-        <div class="header-top">
-            <ul class="pull-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">
-                        <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="10px" class=""><g><circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" data-original="#F0F0F0" class=""/><path style="fill:#D80027;" d="M512,256c0-110.071-69.472-203.906-166.957-240.077v480.155C442.528,459.906,512,366.071,512,256z" data-original="#D80027" class=""/><path style="fill:#0052B4" d="M0,256c0,110.071,69.473,203.906,166.957,240.077V15.923C69.473,52.094,0,145.929,0,256z" data-original="#0052B4" class="active-path"/></g> </svg><i class="fas fa-angle-down"></i>
 
-                    </a>
-                    <ul class="dropdown-menu mymenu ">
-                        <li class="french">
-                            <a href="#"><?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="20px" class=""><g><circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" data-original="#F0F0F0" class=""/><path style="fill:#D80027;" d="M512,256c0-110.071-69.472-203.906-166.957-240.077v480.155C442.528,459.906,512,366.071,512,256z" data-original="#D80027" class=""/><path style="fill:#0052B4" d="M0,256c0,110.071,69.473,203.906,166.957,240.077V15.923C69.473,52.094,0,145.929,0,256z" data-original="#0052B4" class="active-path"/></g> </svg>  Français </a>
+    <div id="container">
+        <header>
+            <div class="wrapper cf">
+                <nav id="main-nav">
+                    <ul class="first-nav">
+                        <li class="search">
+                            <div class="form-container">
+                                <form class="search-form" action="#">
+                                    <input type="text" name="q" placeholder="Rechercher..." autocomplete="off">
+                                </form>
+                            </div>
                         </li>
-                        <li class="english">
+                        <li class="cryptocurrency">
+                        <a href="#" >Cryptocurrency</a>
+                        <ul>
+                            <li><a href="#">Bitcoin</a></li>
+                            <li><a href="#">Ethereum</a></li>
+                            <li class="add"><a href="#" data-nav-close="false" data-add="['Litecoin','Dogecoin','Bitcoin Cash','ZCash']">Add Coin</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="second-nav">
+                        <li class="devices">
+                            <span>Devices</span>
+                            <ul>
+                                <li class="mobile">
+                                <a href="#">Mobile Phones</a>
+                                <ul>
+                                    <li><a href="#">Super Smart Phone</a></li>
+                                    <li><a href="#">Thin Magic Mobile</a></li>
+                                    <li><a href="#">Performance Crusher</a></li>
+                                    <li><a href="#">Futuristic Experience</a></li>
+                                </ul>
+                                </li>
+                                <li class="television">
+                                <a href="#">Televisions</a>
+                                <div class="subnav-container">
+                                    <ul>
+                                    <li><a href="#">Flat Superscreen</a></li>
+                                    <li><a href="#">Gigantic LED</a></li>
+                                    <li><a href="#">Power Eater</a></li>
+                                    <li><a href="#">3D Experience</a></li>
+                                    <li><a href="#">Classic Comfort</a></li>
+                                    </ul>
+                                </div>
+                                </li>
+                                <li class="camera">
+                                <a href="#">Cameras</a>
+                                <ul>
+                                    <li><a href="#">Smart Shot</a></li>
+                                    <li><a href="#">Power Shooter</a></li>
+                                    <li><a href="#">Easy Photo Maker</a></li>
+                                    <li><a href="#">Super Pixel</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="magazines active">
+                        <a href="#">Magazines</a>
+                        <ul>
+                            <li><a href="#">National Geographic</a></li>
+                            <li><a href="#">Scientific American</a></li>
+                            <li><a href="#">The Spectator</a></li>
+                            <li><a href="#">The Rambler</a></li>
+                            <li><a href="#">Physics World</a></li>
+                            <li><a href="#">Popular Science</a></li>
+                            <li><a href="#">Popular Mechanics</a></li>
+                            <li><a href="#">Sky & Telescope</a></li>
+                            <li><a href="#">Discover</a></li>
+                            <li><a href="#">New Scientist</a></li>
+                            <li><a href="#">Psychology Today</a></li>
+                            <li><a href="#">Wired</a></li>
+                        </ul>
+                        </li>
+                        <li class="store">
+                        <a href="#">Store</a>
+                        <ul>
+                            <li>
+                            <a href="#">Clothes</a>
+                            <ul>
+                                <li>
+                                <a href="#">Women's Clothing</a>
+                                <ul>
+                                    <li><a href="#">Tops</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Trousers</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Sale</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="#">Men's Clothing</a>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Trousers</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Sale</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            </li>
+                            <li>
+                            <a href="#">Jewelry</a>
+                            </li>
+                            <li>
+                            <a href="#">Music</a>
+                            </li>
+                            <li>
+                            <a href="#">Grocery</a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="collections"><a href="#">Collections</a></li>
+                        <li class="credits"><a href="#">Credits</a></li>
+                        <li class="add"><a href="#" data-nav-close="false" data-add="['Charts', 'Logs', 'Tests', 'Profile']">Add Item</a></li>
+                    </ul>
+
+                    <ul class="bottom-nav">
+                        <li class="github">
                             <a href="#">
-                            
-
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="20px" class=""><g><circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" data-original="#F0F0F0" class=""/><g>
-    <path style="fill:#0052B4;" d="M52.92,100.142c-20.109,26.163-35.272,56.318-44.101,89.077h133.178L52.92,100.142z" data-original="#0052B4"/>
-    <path style="fill:#0052B4;" d="M503.181,189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075,89.076H503.181z" data-original="#0052B4"/>
-    <path style="fill:#0052B4;" d="M8.819,322.784c8.83,32.758,23.993,62.913,44.101,89.075l89.074-89.075L8.819,322.784L8.819,322.784   z" data-original="#0052B4"/>
-    <path style="fill:#0052B4;" d="M411.858,52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177L411.858,52.921z" data-original="#0052B4"/>
-    <path style="fill:#0052B4;" d="M100.142,459.079c26.163,20.109,56.318,35.272,89.076,44.102V370.005L100.142,459.079z" data-original="#0052B4"/>
-    <path style="fill:#0052B4;" d="M189.217,8.819c-32.758,8.83-62.913,23.993-89.075,44.101l89.075,89.075V8.819z" data-original="#0052B4"/>
-    <path style="fill:#0052B4;" d="M322.783,503.181c32.758-8.83,62.913-23.993,89.075-44.101l-89.075-89.075V503.181z" data-original="#0052B4"/>
-    <path style="fill:#0052B4;" d="M370.005,322.784l89.075,89.076c20.108-26.162,35.272-56.318,44.101-89.076H370.005z" data-original="#0052B4"/>
-</g><g>
-    <path style="fill:#D80027;" d="M509.833,222.609h-220.44h-0.001V2.167C278.461,0.744,267.317,0,256,0   c-11.319,0-22.461,0.744-33.391,2.167v220.44v0.001H2.167C0.744,233.539,0,244.683,0,256c0,11.319,0.744,22.461,2.167,33.391   h220.44h0.001v220.442C233.539,511.256,244.681,512,256,512c11.317,0,22.461-0.743,33.391-2.167v-220.44v-0.001h220.442   C511.256,278.461,512,267.319,512,256C512,244.683,511.256,233.539,509.833,222.609z" data-original="#D80027"/>
-    <path style="fill:#D80027;" d="M322.783,322.784L322.783,322.784L437.019,437.02c5.254-5.252,10.266-10.743,15.048-16.435   l-97.802-97.802h-31.482V322.784z" data-original="#D80027"/>
-    <path style="fill:#D80027;" d="M189.217,322.784h-0.002L74.98,437.019c5.252,5.254,10.743,10.266,16.435,15.048l97.802-97.804   V322.784z" data-original="#D80027"/>
-    <path style="fill:#D80027;" d="M189.217,189.219v-0.002L74.981,74.98c-5.254,5.252-10.266,10.743-15.048,16.435l97.803,97.803   H189.217z" data-original="#D80027"/>
-    <path style="fill:#D80027;" d="M322.783,189.219L322.783,189.219L437.02,74.981c-5.252-5.254-10.743-10.266-16.435-15.047   l-97.802,97.803V189.219z" data-original="#D80027"/>
-</g></g> </svg>
-English
-
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            </a>
+                        </li>
+                        <li class="email">
+                            <a href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                            </a>
+                        </li>
+                        <li class="ko-fi">
+                            <a href="#">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+                            </a>
+                        </li>
+                        <li class="ko-fi">
+                            <a href="#">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+                            </a>
+                        </li>
+                        <li class="github">
+                            <a href="#">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">CFA<i class="fas fa-angle-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li> <span> € (EUR) </span> </li>
-                        <li><span> Fr CFA </span></li>
-                        <li><span> £ (GBP) </span></li>
-                    </ul>
-                </li>
-                <li><a href="#">06 06 06 06 <i class="fas fa-phone"></i></a></li>
-            </ul>
-            <ul class="pull-right">
-                <li class="recommended btn">
-                    <span class="btn black">Ma recommandation personnalisée</span>
-                </li>
-                <li class="dropdown-right"><a href="#"><i class="fas fa-user-alt"></i> S'inscrire / Se connecter</a></li>
-                <li class="dropdown no-border right">
-                    <span><svg style="position: absolute;padding: 10px;right: -0px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15px" height="20px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve" class=""><g><g>
-                            <g id="favorite">
-                                <path d="M255,489.6l-35.7-35.7C86.7,336.6,0,257.55,0,160.65C0,81.6,61.2,20.4,140.25,20.4c43.35,0,86.7,20.4,114.75,53.55    C283.05,40.8,326.4,20.4,369.75,20.4C448.8,20.4,510,81.6,510,160.65c0,96.9-86.7,175.95-219.3,293.25L255,489.6z" data-original="#000000" class="" fill="#000000"/>
-                            </g>
-                        </g></g> </svg></span>
-                    <ul class="dropdown-menu">
-                        <li><span>Mes elemnts favorits</span></li>
-                        <li><span>Mes artistes favorites</span></li>
-                        <li><span>Mes categories favorites</span></li>
-                        <li><span>Mes œuvres favorites</span></li>
-                        <li role="separator" class="divid"></li>
-                        <li><span>Recommendé pour vous</span></li>
-                    </ul>
-                </li>
-                <li class="dropdown no-border minicart right">
-                    <a href="#">
-                        <span><svg style="position: absolute;padding: 10px;right: -35px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 201.387 201.387" style="enable-background:new 0 0 201.387 201.387;" xml:space="preserve" width="15px" height="20px" class=""><g><g><g><path d="M129.413,24.885C127.389,10.699,115.041,0,100.692,0C91.464,0,82.7,4.453,77.251,11.916    c-1.113,1.522-0.78,3.657,0.742,4.77c1.517,1.109,3.657,0.78,4.768-0.744c4.171-5.707,10.873-9.115,17.93-9.115    c10.974,0,20.415,8.178,21.963,19.021c0.244,1.703,1.705,2.932,3.376,2.932c0.159,0,0.323-0.012,0.486-0.034    C128.382,28.479,129.679,26.75,129.413,24.885z" data-original="#000000" class="active-path" fill="#000000"/>
-                        </g></g><g><g><path d="M178.712,63.096l-10.24-17.067c-0.616-1.029-1.727-1.657-2.927-1.657h-9.813c-1.884,0-3.413,1.529-3.413,3.413    s1.529,3.413,3.413,3.413h7.881l6.144,10.24H31.626l6.144-10.24h3.615c1.884,0,3.413-1.529,3.413-3.413s-1.529-3.413-3.413-3.413    h-5.547c-1.2,0-2.311,0.628-2.927,1.657l-10.24,17.067c-0.633,1.056-0.648,2.369-0.043,3.439s1.739,1.732,2.97,1.732h150.187    c1.231,0,2.364-0.662,2.97-1.732S179.345,64.15,178.712,63.096z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g></g><g><g> <path d="M161.698,31.623c-0.478-0.771-1.241-1.318-2.123-1.524l-46.531-10.883c-0.881-0.207-1.809-0.053-2.579,0.423    c-0.768,0.478-1.316,1.241-1.522,2.123l-3.509,15c-0.43,1.835,0.71,3.671,2.546,4.099c1.835,0.43,3.673-0.71,4.101-2.546    l2.732-11.675l39.883,9.329l-6.267,26.795c-0.43,1.835,0.71,3.671,2.546,4.099c0.263,0.061,0.524,0.09,0.782,0.09    c1.55,0,2.953-1.062,3.318-2.635l7.045-30.118C162.328,33.319,162.176,32.391,161.698,31.623z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g></g><g><g> <path d="M102.497,39.692l-3.11-26.305c-0.106-0.899-0.565-1.72-1.277-2.28c-0.712-0.56-1.611-0.816-2.514-0.71l-57.09,6.748    c-1.871,0.222-3.209,1.918-2.988,3.791l5.185,43.873c0.206,1.737,1.679,3.014,3.386,3.014c0.133,0,0.27-0.009,0.406-0.024    c1.87-0.222,3.208-1.918,2.988-3.791l-4.785-40.486l50.311-5.946l2.708,22.915c0.222,1.872,1.91,3.202,3.791,2.99    C101.379,43.261,102.717,41.564,102.497,39.692z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g></g><g> <g>  <path d="M129.492,63.556l-6.775-28.174c-0.212-0.879-0.765-1.64-1.536-2.113c-0.771-0.469-1.696-0.616-2.581-0.406L63.613,46.087    c-1.833,0.44-2.961,2.284-2.521,4.117l3.386,14.082c0.44,1.835,2.284,2.964,4.116,2.521c1.833-0.44,2.961-2.284,2.521-4.117    l-2.589-10.764l48.35-11.626l5.977,24.854c0.375,1.565,1.775,2.615,3.316,2.615c0.265,0,0.533-0.031,0.802-0.096    C128.804,67.232,129.932,65.389,129.492,63.556z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g>  </g><g> <g><path d="M179.197,64.679c-0.094-1.814-1.592-3.238-3.41-3.238H25.6c-1.818,0-3.316,1.423-3.41,3.238l-6.827,133.12    c-0.048,0.934,0.29,1.848,0.934,2.526c0.645,0.677,1.539,1.062,2.475,1.062h163.84c0.935,0,1.83-0.384,2.478-1.062    c0.643-0.678,0.981-1.591,0.934-2.526L179.197,64.679z M22.364,194.56l6.477-126.293h143.701l6.477,126.293H22.364z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g>  </g><g>  <g> <path d="M126.292,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24    C136.532,79.686,131.939,75.093,126.292,75.093z M126.292,88.747c-1.883,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413    c1.882,0,3.413,1.531,3.413,3.413S128.174,88.747,126.292,88.747z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g> </g><g> <g> <path d="M75.092,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24    C85.332,79.686,80.739,75.093,75.092,75.093z M75.092,88.747c-1.882,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413    s3.413,1.531,3.413,3.413S76.974,88.747,75.092,88.747z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g> </g><g> <g> <path d="M126.292,85.333h-0.263c-1.884,0-3.413,1.529-3.413,3.413c0,0.466,0.092,0.911,0.263,1.316v17.457    c0,12.233-9.953,22.187-22.187,22.187s-22.187-9.953-22.187-22.187V88.747c0-1.884-1.529-3.413-3.413-3.413    s-3.413,1.529-3.413,3.413v18.773c0,15.998,13.015,29.013,29.013,29.013s29.013-13.015,29.013-29.013V88.747    C129.705,86.863,128.176,85.333,126.292,85.333z" data-original="#000000" class="active-path" fill="#000000"/>
-                            </g></g></g> </svg></span></a>
-                    <div class="hidden-xs dropdown-menu mymenu">
-                    <div class="products-top">
-                    <img class="empty lazyloaded" src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/public/img/svg/ill_placeholder_cart.svg" data-src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/public/img/svg/ill_placeholder_cart.svg">
-                    <p class="empty-cart secondary-title">
-                            
-                                Votre panier est vide
-                            
-                        </p>
-            </div>
+
+                </nav>
+                <a class="toggle">
+                    <span></span>
+                </a>
+
+                <a class="panier" href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 201.387 201.387" xml:space="preserve" width="25px" height="25px" class=""><g><g><g><path d="M129.413,24.885C127.389,10.699,115.041,0,100.692,0C91.464,0,82.7,4.453,77.251,11.916    c-1.113,1.522-0.78,3.657,0.742,4.77c1.517,1.109,3.657,0.78,4.768-0.744c4.171-5.707,10.873-9.115,17.93-9.115    c10.974,0,20.415,8.178,21.963,19.021c0.244,1.703,1.705,2.932,3.376,2.932c0.159,0,0.323-0.012,0.486-0.034    C128.382,28.479,129.679,26.75,129.413,24.885z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g></g><g><g><path d="M178.712,63.096l-10.24-17.067c-0.616-1.029-1.727-1.657-2.927-1.657h-9.813c-1.884,0-3.413,1.529-3.413,3.413    s1.529,3.413,3.413,3.413h7.881l6.144,10.24H31.626l6.144-10.24h3.615c1.884,0,3.413-1.529,3.413-3.413s-1.529-3.413-3.413-3.413    h-5.547c-1.2,0-2.311,0.628-2.927,1.657l-10.24,17.067c-0.633,1.056-0.648,2.369-0.043,3.439s1.739,1.732,2.97,1.732h150.187    c1.231,0,2.364-0.662,2.97-1.732S179.345,64.15,178.712,63.096z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g></g><g><g> <path d="M161.698,31.623c-0.478-0.771-1.241-1.318-2.123-1.524l-46.531-10.883c-0.881-0.207-1.809-0.053-2.579,0.423    c-0.768,0.478-1.316,1.241-1.522,2.123l-3.509,15c-0.43,1.835,0.71,3.671,2.546,4.099c1.835,0.43,3.673-0.71,4.101-2.546    l2.732-11.675l39.883,9.329l-6.267,26.795c-0.43,1.835,0.71,3.671,2.546,4.099c0.263,0.061,0.524,0.09,0.782,0.09    c1.55,0,2.953-1.062,3.318-2.635l7.045-30.118C162.328,33.319,162.176,32.391,161.698,31.623z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g></g><g><g> <path d="M102.497,39.692l-3.11-26.305c-0.106-0.899-0.565-1.72-1.277-2.28c-0.712-0.56-1.611-0.816-2.514-0.71l-57.09,6.748    c-1.871,0.222-3.209,1.918-2.988,3.791l5.185,43.873c0.206,1.737,1.679,3.014,3.386,3.014c0.133,0,0.27-0.009,0.406-0.024    c1.87-0.222,3.208-1.918,2.988-3.791l-4.785-40.486l50.311-5.946l2.708,22.915c0.222,1.872,1.91,3.202,3.791,2.99    C101.379,43.261,102.717,41.564,102.497,39.692z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g></g><g> <g>  <path d="M129.492,63.556l-6.775-28.174c-0.212-0.879-0.765-1.64-1.536-2.113c-0.771-0.469-1.696-0.616-2.581-0.406L63.613,46.087    c-1.833,0.44-2.961,2.284-2.521,4.117l3.386,14.082c0.44,1.835,2.284,2.964,4.116,2.521c1.833-0.44,2.961-2.284,2.521-4.117    l-2.589-10.764l48.35-11.626l5.977,24.854c0.375,1.565,1.775,2.615,3.316,2.615c0.265,0,0.533-0.031,0.802-0.096    C128.804,67.232,129.932,65.389,129.492,63.556z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g>  </g><g> <g><path d="M179.197,64.679c-0.094-1.814-1.592-3.238-3.41-3.238H25.6c-1.818,0-3.316,1.423-3.41,3.238l-6.827,133.12    c-0.048,0.934,0.29,1.848,0.934,2.526c0.645,0.677,1.539,1.062,2.475,1.062h163.84c0.935,0,1.83-0.384,2.478-1.062    c0.643-0.678,0.981-1.591,0.934-2.526L179.197,64.679z M22.364,194.56l6.477-126.293h143.701l6.477,126.293H22.364z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g>  </g><g>  <g> <path d="M126.292,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24    C136.532,79.686,131.939,75.093,126.292,75.093z M126.292,88.747c-1.883,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413    c1.882,0,3.413,1.531,3.413,3.413S128.174,88.747,126.292,88.747z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g> </g><g> <g> <path d="M75.092,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24    C85.332,79.686,80.739,75.093,75.092,75.093z M75.092,88.747c-1.882,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413    s3.413,1.531,3.413,3.413S76.974,88.747,75.092,88.747z" data-original="#000000" class="active-path" fill="#000000"></path>
+                            </g> </g><g> <g> <path d="M126.292,85.333h-0.263c-1.884,0-3.413,1.529-3.413,3.413c0,0.466,0.092,0.911,0.263,1.316v17.457    c0,12.233-9.953,22.187-22.187,22.187s-22.187-9.953-22.187-22.187V88.747c0-1.884-1.529-3.413-3.413-3.413    s-3.413,1.529-3.413,3.413v18.773c0,15.998,13.015,29.013,29.013,29.013s29.013-13.015,29.013-29.013V88.747    C129.705,86.863,128.176,85.333,126.292,85.333z" data-original="#000000" class="active-path" fill="#000000"></path></g></g></g>
+                        </svg>
+                    </span>
+                </a>
+        </header>
+        <header>
+            <!--////   header top   ////-->
+            <div class="header-top">
+                <ul class="pull-left">
+                    <li id="left-dropdown1" class="dropdown">
+                        <a href="#"  class="dropdown-toggle">
+                            <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="10px" class=""><g><circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" data-original="#F0F0F0" class=""/><path style="fill:#D80027;" d="M512,256c0-110.071-69.472-203.906-166.957-240.077v480.155C442.528,459.906,512,366.071,512,256z" data-original="#D80027" class=""/><path style="fill:#0052B4" d="M0,256c0,110.071,69.473,203.906,166.957,240.077V15.923C69.473,52.094,0,145.929,0,256z" data-original="#0052B4" class="active-path"/></g> </svg><i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu mymenu ">
+                            <b style="height: 10px;width: 10px;border-top: 2px solid rgb(217, 217, 217);border-left: 2px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;left: 27px;right: 34px;top: -16px;"></b>
+                            <li class="french">
+                                <a href="#"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="20px" class=""><g><circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" data-original="#F0F0F0" class=""/><path style="fill:#D80027;" d="M512,256c0-110.071-69.472-203.906-166.957-240.077v480.155C442.528,459.906,512,366.071,512,256z" data-original="#D80027" class=""/><path style="fill:#0052B4" d="M0,256c0,110.071,69.473,203.906,166.957,240.077V15.923C69.473,52.094,0,145.929,0,256z" data-original="#0052B4" class="active-path"/></g> </svg>  Français </a>
+                            </li>
+                            <li class="english">
+                                <a href="#">
+                                    <?xml version="1.0"?>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="20px" class=""><g><circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" data-original="#F0F0F0" class=""/><g>
+                                        <path style="fill:#0052B4;" d="M52.92,100.142c-20.109,26.163-35.272,56.318-44.101,89.077h133.178L52.92,100.142z" data-original="#0052B4"/>
+                                        <path style="fill:#0052B4;" d="M503.181,189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075,89.076H503.181z" data-original="#0052B4"/>
+                                        <path style="fill:#0052B4;" d="M8.819,322.784c8.83,32.758,23.993,62.913,44.101,89.075l89.074-89.075L8.819,322.784L8.819,322.784   z" data-original="#0052B4"/>
+                                        <path style="fill:#0052B4;" d="M411.858,52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177L411.858,52.921z" data-original="#0052B4"/>
+                                        <path style="fill:#0052B4;" d="M100.142,459.079c26.163,20.109,56.318,35.272,89.076,44.102V370.005L100.142,459.079z" data-original="#0052B4"/>
+                                        <path style="fill:#0052B4;" d="M189.217,8.819c-32.758,8.83-62.913,23.993-89.075,44.101l89.075,89.075V8.819z" data-original="#0052B4"/>
+                                        <path style="fill:#0052B4;" d="M322.783,503.181c32.758-8.83,62.913-23.993,89.075-44.101l-89.075-89.075V503.181z" data-original="#0052B4"/>
+                                        <path style="fill:#0052B4;" d="M370.005,322.784l89.075,89.076c20.108-26.162,35.272-56.318,44.101-89.076H370.005z" data-original="#0052B4"/>
+                                    </g><g>
+                                        <path style="fill:#D80027;" d="M509.833,222.609h-220.44h-0.001V2.167C278.461,0.744,267.317,0,256,0   c-11.319,0-22.461,0.744-33.391,2.167v220.44v0.001H2.167C0.744,233.539,0,244.683,0,256c0,11.319,0.744,22.461,2.167,33.391   h220.44h0.001v220.442C233.539,511.256,244.681,512,256,512c11.317,0,22.461-0.743,33.391-2.167v-220.44v-0.001h220.442   C511.256,278.461,512,267.319,512,256C512,244.683,511.256,233.539,509.833,222.609z" data-original="#D80027"/>
+                                        <path style="fill:#D80027;" d="M322.783,322.784L322.783,322.784L437.019,437.02c5.254-5.252,10.266-10.743,15.048-16.435   l-97.802-97.802h-31.482V322.784z" data-original="#D80027"/>
+                                        <path style="fill:#D80027;" d="M189.217,322.784h-0.002L74.98,437.019c5.252,5.254,10.743,10.266,16.435,15.048l97.802-97.804   V322.784z" data-original="#D80027"/>
+                                        <path style="fill:#D80027;" d="M189.217,189.219v-0.002L74.981,74.98c-5.254,5.252-10.266,10.743-15.048,16.435l97.803,97.803   H189.217z" data-original="#D80027"/>
+                                        <path style="fill:#D80027;" d="M322.783,189.219L322.783,189.219L437.02,74.981c-5.252-5.254-10.743-10.266-16.435-15.047   l-97.802,97.803V189.219z" data-original="#D80027"/>
+                                    </g></g> </svg>
+                                    English
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="left-dropdown2" class="dropdown">
+                        <a href="#" class="dropdown-toggle" >CFA<i class="fas fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" id="sub1">
+                            <b style="height: 10px;width: 10px;border-top: 2px solid rgb(217, 217, 217);border-left: 2px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;left: 27px;right: 34px;top: -17px;"></b>
+                            <li> <span> € (EUR) </span> </li>
+                            <li><span> Fr CFA </span></li>
+                            <li><span> £ (GBP) </span></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">06 06 06 06 <i class="fas fa-phone"></i></a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li class="recommended btn">
+                        <span class="btn black">Ma recommandation personnalisée</span>
+                    </li>
+                    <li class="dropdown-right"><a href="#"><i class="fas fa-user-alt"></i> S'inscrire / Se connecter</a></li>
+                    <li id="right-dropdown1" class="dropdown no-border right">
+                        <span><svg  style="position: absolute;padding: 10px;right: -0px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15px" height="20px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve" class=""><g><g>
+                                <g id="favorite">
+                                    <path d="M255,489.6l-35.7-35.7C86.7,336.6,0,257.55,0,160.65C0,81.6,61.2,20.4,140.25,20.4c43.35,0,86.7,20.4,114.75,53.55    C283.05,40.8,326.4,20.4,369.75,20.4C448.8,20.4,510,81.6,510,160.65c0,96.9-86.7,175.95-219.3,293.25L255,489.6z" data-original="#000000" class="" fill="#000000"/>
+                                </g>
+                            </g></g> </svg></span>
+                        <ul class="rightDropdown dropdown-menu">
+                            <b style="height: 10px;width: 10px;;border-top: 2px solid rgb(217, 217, 217);border-left: 2px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;right: 13px;top: -16px;"></b>
+                            <li><span>Mes elemnts favorits</span></li>
+                            <li><span>Mes artistes favorites</span></li>
+                            <li><span>Mes categories favorites</span></li>
+                            <li><span>Mes œuvres favorites</span></li>
+                            <li role="separator" class="divider"></li>
+                            <li><span>Recommendé pour vous</span></li>
+                        </ul>
+                    </li>
+                    <li id="right-dropdown2" class="dropdown no-border minicart right">
+                        <a href="#">
+                            <span>
+                                <svg style="position: absolute;padding: 10px;right: -35px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 201.387 201.387" style="enable-background:new 0 0 201.387 201.387;" xml:space="preserve" width="15px" height="20px" class=""><g><g><g><path d="M129.413,24.885C127.389,10.699,115.041,0,100.692,0C91.464,0,82.7,4.453,77.251,11.916    c-1.113,1.522-0.78,3.657,0.742,4.77c1.517,1.109,3.657,0.78,4.768-0.744c4.171-5.707,10.873-9.115,17.93-9.115    c10.974,0,20.415,8.178,21.963,19.021c0.244,1.703,1.705,2.932,3.376,2.932c0.159,0,0.323-0.012,0.486-0.034    C128.382,28.479,129.679,26.75,129.413,24.885z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g></g><g><g><path d="M178.712,63.096l-10.24-17.067c-0.616-1.029-1.727-1.657-2.927-1.657h-9.813c-1.884,0-3.413,1.529-3.413,3.413    s1.529,3.413,3.413,3.413h7.881l6.144,10.24H31.626l6.144-10.24h3.615c1.884,0,3.413-1.529,3.413-3.413s-1.529-3.413-3.413-3.413    h-5.547c-1.2,0-2.311,0.628-2.927,1.657l-10.24,17.067c-0.633,1.056-0.648,2.369-0.043,3.439s1.739,1.732,2.97,1.732h150.187    c1.231,0,2.364-0.662,2.97-1.732S179.345,64.15,178.712,63.096z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g></g><g><g> <path d="M161.698,31.623c-0.478-0.771-1.241-1.318-2.123-1.524l-46.531-10.883c-0.881-0.207-1.809-0.053-2.579,0.423    c-0.768,0.478-1.316,1.241-1.522,2.123l-3.509,15c-0.43,1.835,0.71,3.671,2.546,4.099c1.835,0.43,3.673-0.71,4.101-2.546    l2.732-11.675l39.883,9.329l-6.267,26.795c-0.43,1.835,0.71,3.671,2.546,4.099c0.263,0.061,0.524,0.09,0.782,0.09    c1.55,0,2.953-1.062,3.318-2.635l7.045-30.118C162.328,33.319,162.176,32.391,161.698,31.623z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g></g><g><g> <path d="M102.497,39.692l-3.11-26.305c-0.106-0.899-0.565-1.72-1.277-2.28c-0.712-0.56-1.611-0.816-2.514-0.71l-57.09,6.748    c-1.871,0.222-3.209,1.918-2.988,3.791l5.185,43.873c0.206,1.737,1.679,3.014,3.386,3.014c0.133,0,0.27-0.009,0.406-0.024    c1.87-0.222,3.208-1.918,2.988-3.791l-4.785-40.486l50.311-5.946l2.708,22.915c0.222,1.872,1.91,3.202,3.791,2.99    C101.379,43.261,102.717,41.564,102.497,39.692z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g></g><g> <g>  <path d="M129.492,63.556l-6.775-28.174c-0.212-0.879-0.765-1.64-1.536-2.113c-0.771-0.469-1.696-0.616-2.581-0.406L63.613,46.087    c-1.833,0.44-2.961,2.284-2.521,4.117l3.386,14.082c0.44,1.835,2.284,2.964,4.116,2.521c1.833-0.44,2.961-2.284,2.521-4.117    l-2.589-10.764l48.35-11.626l5.977,24.854c0.375,1.565,1.775,2.615,3.316,2.615c0.265,0,0.533-0.031,0.802-0.096    C128.804,67.232,129.932,65.389,129.492,63.556z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g>  </g><g> <g><path d="M179.197,64.679c-0.094-1.814-1.592-3.238-3.41-3.238H25.6c-1.818,0-3.316,1.423-3.41,3.238l-6.827,133.12    c-0.048,0.934,0.29,1.848,0.934,2.526c0.645,0.677,1.539,1.062,2.475,1.062h163.84c0.935,0,1.83-0.384,2.478-1.062    c0.643-0.678,0.981-1.591,0.934-2.526L179.197,64.679z M22.364,194.56l6.477-126.293h143.701l6.477,126.293H22.364z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g>  </g><g>  <g> <path d="M126.292,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24    C136.532,79.686,131.939,75.093,126.292,75.093z M126.292,88.747c-1.883,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413    c1.882,0,3.413,1.531,3.413,3.413S128.174,88.747,126.292,88.747z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g> </g><g> <g> <path d="M75.092,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24    C85.332,79.686,80.739,75.093,75.092,75.093z M75.092,88.747c-1.882,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413    s3.413,1.531,3.413,3.413S76.974,88.747,75.092,88.747z" data-original="#000000" class="active-path" fill="#000000"/>
+                                    </g> </g><g> <g> <path d="M126.292,85.333h-0.263c-1.884,0-3.413,1.529-3.413,3.413c0,0.466,0.092,0.911,0.263,1.316v17.457    c0,12.233-9.953,22.187-22.187,22.187s-22.187-9.953-22.187-22.187V88.747c0-1.884-1.529-3.413-3.413-3.413    s-3.413,1.529-3.413,3.413v18.773c0,15.998,13.015,29.013,29.013,29.013s29.013-13.015,29.013-29.013V88.747    C129.705,86.863,128.176,85.333,126.292,85.333z" data-original="#000000" class="active-path" fill="#000000"/></g></g></g>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="hidden-xs dropdown-menu mymenu">
+                        <b style="height: 10px;width: 10px;;border-top: 2px solid rgb(217, 217, 217);border-left: 2px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;right: 17px;top: -16px;"></b>
+                        <div class="products-top">
+                            <img class="empty lazyloaded" src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/public/img/svg/ill_placeholder_cart.svg" data-src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/public/img/svg/ill_placeholder_cart.svg">
+                            <p class="empty-cart secondary-title"> Votre panier est vide </p>
+                        </div>
                         <div class="products-bottom">
-                        <div class="clearfix"></div>
+                            <div class="clearfix"></div>
                             <a class="button nblack">Parcourir les oeuvres</a>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-         <!-- ////   header top-->
+                    </li>
+                </ul>
+            </div>
+             <!-- ////   header top   ////-->
 
-          <!-- ////   Navbar main-->
-        <div id="navbar-main" class="main-header relative row">
-            <nav id="desktop-menu" class="nav">
-                <div class="container">
-                    <ul>
-                        <li><a href="#" class="underline col-black subtitle ">Découvrir</span></a>
-                            <div class="submenu clearfix">
-                                <div class="clearfix">
-                                    <ul class="main-menu clearfix">
-                                        <li class="col-xs-3">
-                                            <p class="title">Sous categories</p>
-                                            <ul>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="col-xs-6">
-                                            <p class="title">Sous categories</p>
-                                            <ul>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                            </ul></li>
-                                        <li class="col-xs-3">
-                                            <p class="title">Sous categories</p>
-                                            <ul>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                                <li><a  href="#">Pour la maison</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <div class="right-image">
-                                        <p class="title">Oeuvre du moment</p>
-                                        <a href="/fr/oeuvres-d-art-contemporain/drawing/413803/femme-nue" data-item-artwork="">
-                                            <img class="pointer img-responsive lazyloaded" alt="Robert Combas, Femme nue, Dessin" title="Robert Combas, Femme nue, Dessin" src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/artwork/413803_1_s.jpg" data-src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/artwork/413803_1_s.jpg" height="205" width="205">
-                                        </a>
-                                        <div class="detail" data-analytics="">
-                                            <a class="title" href="/fr/artistes-contemporains/france/387/robert-combas">
-                                                Robert Combas
+              <!-- ////   Navbar main  ////-->
+            <div id="navbar-main" class="main-header relative row">
+                <nav id="desktop-menu" class="nav">
+                    <div class="container">
+                        <ul>
+                            <li id="menuDropdown1"><a href="#" class="underline col-black subtitle "><span class="animation">Découvrir</span></a>
+                                <div class="submenu clearfix">
+                                        <b style="height: 10px;width: 10px;;border-top: 1px solid rgb(217, 217, 217);border-left: 1px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;top: -15px;left: 190px;"></b>
+                                    <div class="clearfix">
+                                        <ul class="main-menu clearfix">
+                                            <li class="col-xs-3">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="col-xs-6">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="col-xs-3">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="right-image">
+                                            <p class="title">Oeuvre du moment</p>
+                                            <a href="/fr/oeuvres-d-art-contemporain/drawing/413803/femme-nue" data-item-artwork="">
+                                                <img class="pointer img-responsive lazyloaded" alt="Seaty, Nokomis, Peinture" title="Seaty, Nokomis, Peinture" src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/artwork/545065_1_s.jpg" data-src="https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/artwork/545065_1_s.jpg" height="205" width="205">
                                             </a>
-                                            <br>
-                                            <i class="pointer" data-item-artwork="" data-infos="stcdsqfrstcdsqoeuvres-d-art-contemporainstcdsqdrawingstcdsq413803stcdsqfemme-nue">Femme nue</i>
-                                            <br>
-                                                <p class="media-price price">5 639 $</p>
+                                            <div class="detail" data-analytics="">
+                                                <a class="title" href="/fr/artistes-contemporains/france/387/robert-combas">
+                                                    Robert Combas
+                                                </a>
+                                                <br>
+                                                <i class="pointer" data-item-artwork="" data-infos="stcdsqfrstcdsqoeuvres-d-art-contemporainstcdsqdrawingstcdsq413803stcdsqfemme-nue">Femme nue</i>
+                                                <br>
+                                                    <p class="media-price price">5 639 $</p>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="selection-menu">
+                                        <span>Nos sélections</span>
+                                        <i class="icon-youngtalents" ><img src="./assets/offer.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                           Nos differents offres
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/star.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Oeuvres les plus vendu
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/recommended.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Nos recommandation
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/award.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Oeuvres d'artistes best sellers
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/clock.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Revoire plutard
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="selection-menu">
-                                    <span>Nos sélections</span>
-                                    <i class="icon-youngtalents" ><img src="./assets/offer.png" alt=""></i>
-                                    <a href="#" class="underline col-black submenu-title">
-                                       Nos differents offres
-                                    </a>
-                                    <i class="icon-youngtalents" ><img src="./assets/star.png" alt=""></i>
-                                    <a href="#" class="underline col-black submenu-title">
-                                            Oeuvres les plus vendu
-                                    </a>
-                                    <i class="icon-youngtalents" ><img src="./assets/recommended.png" alt=""></i>
-                                    <a href="#" class="underline col-black submenu-title">
-                                            Nos recommandation
-                                    </a>
-                                    <i class="icon-youngtalents" ><img src="./assets/award.png" alt=""></i>
-                                    <a href="#" class="underline col-black submenu-title">
-                                            Oeuvres d'artistes best sellers
-                                    </a>
-                                    <i class="icon-youngtalents" ><img src="./assets/clock.png" alt=""></i>
-                                    <a href="#" class="underline col-black submenu-title">
-                                            Revoire plutard
-                                    </a>
+                            </li>
+                            <li id="menuDropdown2"><a href="#" class="underline col-black subtitle "><span class="animation">Oeuvres</span></a>
+                                <div class="submenu clearfix">
+                                        <b style="height: 10px;width: 10px;;border-top: 1px solid rgb(217, 217, 217);border-left: 1px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;top: -15px;left: 280px;"></b>
+                                    <div class="clearfix">
+                                        <ul class="main-menu clearfix">
+                                            <li class="col-xs-3">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="col-xs-6">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul></li>
+                                            <li class="col-xs-3">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="right-image">
+                                            <p class="title">Oeuvre du moment</p>
+                                            <a href="/fr/oeuvres-d-art-contemporain/drawing/413803/femme-nue" data-item-artwork="">
+                                                <img class="pointer img-responsive lazyloaded" alt="Seaty, Nokomis, Peinture" title="Seaty, Nokomis, Peinture" src="./assets/img1.jpg" height="205" width="205">
+                                            </a>
+                                            <div class="detail" data-analytics="">
+                                                <a class="title" href="/fr/artistes-contemporains/france/387/robert-combas">
+                                                    Robert Combas
+                                                </a>
+                                                <br>
+                                                <i class="pointer" data-item-artwork="" data-infos="stcdsqfrstcdsqoeuvres-d-art-contemporainstcdsqdrawingstcdsq413803stcdsqfemme-nue">Femme nue</i>
+                                                <br>
+                                                    <p class="media-price price">5 639 $</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selection-menu">
+                                        <span>Nos sélections</span>
+                                        <i class="icon-youngtalents" ><img src="./assets/offer.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                           Nos differents offres
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/star.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Oeuvres les plus vendu
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/recommended.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Nos recommandation
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/award.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Oeuvres d'artistes best sellers
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/clock.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Revoire plutard
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li><a href="#" class="underline col-black subtitle "><span class="animation">Oeuvres</span></a></li>
-                        <li><a href="#" class="underline col-black subtitle "><span class="animation">Peinture</span></a></li>
-                        <li><a href="#" class="underline col-black subtitle "><span class="animation">Sculpture</span></a></li>
-                        <li><a href="#" class="underline col-black subtitle "><span class="animation">Édition</span></a></li>
-                        <li><a href="#" class="underline col-black subtitle "><span class="animation">Photographie</span></a></li>
-                        <li><a href="#" class="underline col-black subtitle "><span class="animation">Dessin</span></a></li>
-                        <li><a href="#" class="underline col-black subtitle "><span class="animation">Artistes</span></a></li>
-                        <li><a href="#" class="underline col-black subtitle col-red"><span class="animation">More </span></a></li>
-                    </ul>
+                            </li>
+                            <li id="menuDropdown3"><a href="#" class="underline col-black subtitle "><span class="animation">Peinture</span></a>
+                                <div class="submenu clearfix">
+                                        <b style="height: 10px;width: 10px;;border-top: 1px solid rgb(217, 217, 217);border-left: 1px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;top: -15px;left: 368px;"></b>
+                                    <div class="clearfix">
+                                        <ul class="main-menu clearfix">
+                                            <li class="col-xs-3">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="col-xs-6">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul></li>
+                                            <li class="col-xs-3">
+                                                <p class="title">Sous categories</p>
+                                                <ul>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                    <li><a  href="#">Pour la maison</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="right-image">
+                                            <p class="title">Oeuvre du moment</p>
+                                            <a href="/fr/oeuvres-d-art-contemporain/drawing/413803/femme-nue" data-item-artwork="">
+                                                <img class="pointer img-responsive lazyloaded" alt="Seaty, Nokomis, Peinture" title="Seaty, Nokomis, Peinture" src="./assets/img1.jpg" height="205" width="205">
+                                            </a>
+                                            <div class="detail" data-analytics="">
+                                                <a class="title" href="/fr/artistes-contemporains/france/387/robert-combas">
+                                                    Robert Combas
+                                                </a>
+                                                <br>
+                                                <i class="pointer" data-item-artwork="" data-infos="stcdsqfrstcdsqoeuvres-d-art-contemporainstcdsqdrawingstcdsq413803stcdsqfemme-nue">Femme nue</i>
+                                                <br>
+                                                    <p class="media-price price">5 639 $</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selection-menu">
+                                        <span>Nos sélections</span>
+                                        <i class="icon-youngtalents" ><img src="./assets/offer.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                           Nos differents offres
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/star.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Oeuvres les plus vendu
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/recommended.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Nos recommandation
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/award.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Oeuvres d'artistes best sellers
+                                        </a>
+                                        <i class="icon-youngtalents" ><img src="./assets/clock.png" alt=""></i>
+                                        <a href="#" class="underline col-black submenu-title">
+                                                Revoire plutard
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#" class="underline col-black subtitle "><span class="animation">Sculpture</span></a></li>
+                            <li><a href="#" class="underline col-black subtitle "><span class="animation">Édition</span></a></li>
+                            <li><a href="#" class="underline col-black subtitle "><span class="animation">Photographie</span></a></li>
+                            <li><a href="#" class="underline col-black subtitle "><span class="animation">Dessin</span></a></li>
+                            <li id="artiste"><a href="#" class="underline col-black subtitle "><span class="animation">Artistes</span></a>
+
+                                <div class="menuHover">
+                                        <b style="height: 10px;width: 10px;;border-top: 1px solid rgb(217, 217, 217);border-left: 1px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;top: -15px;left: 10px;"></b>
+                                    <div class="clearfix">
+                                        <ul class="menuList">
+                                            <div class="wdth">
+                                                <ul>
+                                                    <li><a  href="#">Artiste 1</a></li>
+                                                    <li><a  href="#">Artiste 2</a></li>
+                                                    <li><a  href="#">Artiste 3</a></li>
+                                                    <li><a  href="#">Artiste 4</a></li>
+                                                    <li><a  href="#">Artiste 5</a></li>
+                                                    <li><a  href="#">Artiste 6</a></li>
+                                                    <li><a  href="#">Artiste 7</a></li>
+                                                    <li><a  href="#">Artiste 8</a></li>
+                                                    <li><a  href="#">Artiste 9</a></li>
+                                                </ul>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li id="more"><a href="#" class="underline col-black subtitle col-red"><span class="animation">More </span></a>
+                                <div class="menuHover">
+                                        <b style="height: 10px;width: 10px;;border-top: 1px solid rgb(217, 217, 217);border-left: 1px solid rgb(217, 217, 217);background-color: rgb(255, 255, 255);transform: translate(4.5px, 9px) rotate(45deg);position: absolute;overflow: hidden;top: -15px;left: 10px;"></b>
+                                    <div class="clearfix">
+                                        <ul class="menuList">
+                                            <div class="wdth">
+                                                <ul>
+                                                    <li><a  href="#">Categorie 1</a></li>
+                                                    <li><a  href="#">Categorie 2</a></li>
+                                                    <li><a  href="#">Categorie 3</a></li>
+                                                    <li><a  href="#">Categorie 4</a></li>
+                                                    <li><a  href="#">Categorie 5</a></li>
+                                                    <li><a  href="#">Categorie 6</a></li>
+                                                    <li><a  href="#">Categorie 7</a></li>
+                                                </ul>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- ////   Navbar main  ////-->
+        </header>
+
+
+        <div class="background-video">
+            <video autoplay loop muted playsinline >
+                <source src="./test1.mp4" type="video/mp4" data-wf-ignore="true">
+            </video>
+            <div class="min-height-40">
+                <p class="padd-top-10">
+                    <span>
+                        Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
+                    </span>
+                    <span>
+                        <a class="bold" href="https://www.artsper.com/fr/cms/comment-ca-marche">En savoir plus</a>
+                    </span>
+                </p>
+            </div>
+            <div class="preheader">
+                <h1> contactus idem nec loqui<br>  permissus
+                    <span>80 000 oeuvres, 15 000 artistes</span>
+                </h1>
+                <a class="btn white inline-block" href="#">Découvrez nos meilleures oeuvres <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="vertical-align: sub;enable-background:new 0 0 512 512;" xml:space="preserve" vertical-align: sub; width="20px" height="20px" class=""><g><polygon style="fill:#DE4C3C;" points="256,0 295.989,55.172 353.986,19.509 369.788,85.716 437.054,74.946 426.284,142.212   492.491,158.014 456.828,216.011 512,256 456.828,295.989 492.491,353.986 426.284,369.788 437.054,437.054 369.788,426.284   353.986,492.491 295.989,456.828 256,512 216.011,456.828 158.014,492.491 142.212,426.284 74.946,437.054 85.716,369.788   19.509,353.986 55.172,295.989 0,256 55.172,216.011 19.509,158.014 85.716,142.212 74.946,74.946 142.212,85.716 158.014,19.509   216.011,55.172 " data-original="#DE4C3C" class=""/><rect x="123.586" y="203.034" style="fill:#4398D1;" width="70.621" height="176.552" data-original="#4398D1"/><rect x="123.586" y="317.793" style="fill:#3E8CC7;" width="70.621" height="61.793" data-original="#3E8CC7"/><path style="fill:#F7BB8F;" d="M273.655,88.276v61.793l-35.31,35.31h79.448v-52.966C317.793,108.041,298.028,88.276,273.655,88.276z  " data-original="#F7BB8F" class=""/><path style="fill:#FEC9A3;" d="M361.931,185.379H238.345l-44.138,44.138v132.414h172.138c12.191,0,22.069-9.878,22.069-22.069l0,0  c0-12.191-9.878-22.069-22.069-22.069h8.828c12.191,0,22.069-9.878,22.069-22.069l0,0c0-12.191-9.878-22.069-22.069-22.069l0,0  c12.191,0,22.069-9.878,22.069-22.069l0,0c0-12.191-9.878-22.069-22.069-22.069H384c12.191,0,22.069-9.878,22.069-22.069l0,0  c0-12.191-9.878-22.069-22.069-22.069H361.931z" data-original="#FEC9A3" class=""/><rect x="150.069" y="335.448" style="fill:#E0E0E0" width="17.655" height="17.655" data-original="#E0E0E0" class="active-path"/><g> <path style="fill:#F7BB8F;" d="M392.121,186.968c-8.519,14.663-17.796,28.866-27.807,42.549H384   c12.191-0.053,22.025-9.984,21.972-22.166C405.928,198.374,400.455,190.314,392.121,186.968z" data-original="#F7BB8F" class=""/> <path style="fill:#F7BB8F;" d="M232.519,361.931h133.826c12.191,0,22.069-9.878,22.069-22.069c0-12.191-9.878-22.069-22.069-22.069   h8.828c12.191,0,22.069-9.878,22.069-22.069c0-12.191-9.878-22.069-22.069-22.069l0,0c12.191,0,22.069-9.878,22.069-22.069   c0-12.191-9.878-22.069-22.069-22.069h-10.858C326.885,279.684,282.509,324.273,232.519,361.931z" data-original="#F7BB8F" class=""/>
+                </g></g> </svg></a>
+            </div>
+        </div>
+
+
+        <div class="grid-container">
+           <!-- <div class="left-col">
+                <div class="leftSlide">
+                    <p>tum comitem orientis</p>
+                    <a href="#">J'en profite !</a>
+                    <span class="divider"></span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-            </nav>
+            </div> -->
+            <div class="right-col">
+                <a href="#">
+                    <div class="bodycontain">
+                        <div class="div1">
+                            <div class="left">
+                                <h3>Avant-premiere</h3>
+                                <h1>Eminuit autem inter humilia </h1>
+                                <p>Honoratum tum comitem orientis formula missa letali omnino scelere nullo contactus idem Clematius nec hiscere nec loqui permissus occideretur.</p>
+                            </div>
+                            <div class="right">
+                                <a href="#">J'en profite ! <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px" class=""><g><g><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5   c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z" data-original="#000000" class="active-path" data-old_color="#F6F6F6" fill="#F8F8F8"/></g></g> </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-    </header>
+    </div>
+  </div>
+
+  <!--  =========================================   site Body ==================================================== -->
+
+  <div class="section-exposition">
+      <div class="image-left">
+          <img src="./assets/img1.jpg">
+      </div>
+      <div class="description">
+          <div class="titre-desciption">
+              <div class="first">
+                  <h2>Shapes and shades</h2>
+              </div>
+              <div class="second">
+                  <p class="date">
+                      <i class="icon-calendar marg-ri-10"></i>
+                      <span class="">
+                          6 juin au 14 juillet 2019
+                      </span>
+                  </p>
+              </div>
+              <div class="third">
+                  <p class="name">
+                      Galerie Martine Ehmer (Brussels, BELGIQUE)
+                  </p>
+              </div>
+          </div>
+          <div class="text-desciption">
+              L’exposition Shapes and Shades réunit 6 artistes travaillant les formes et les nuances. Pour la plupart issus du mouvement street art, français ou américain, chacun a développé un univers propre. Qu’il soit empli de couleurs vives et de mouvements spontanés
+          </div>
+          <div class="button-description">
+              <a href="/#" class="btn">Voir les oeuvres de l'exposition</a>
+          </div>
+      </div>
+  </div>
+  <div class="section-vogue">
+      <div class="titre-vogue">
+          <span class="titre"><strong>Artistes en vogue</strong></span>
+          <span class="float-right"><a href="#" class="under-black">Accéder à tous les artistes</a></span><br>
+          <span>Notre sélection d'artistes à suivre en ce moment</span>
+      </div>
+      <div class="list-artiste">
+          <!--
+          <div class="row">
+              <img class="col-md-8  col-sm-6 col-xs-12" src="544585_1_f.jpg" alt="">
+              <img class="col-md-4 col-sm-6 col-xs-12" src="534386_1_f.jpg" alt="">
+          </div>
+          <div class="row">
+              <img class="col-md-4 col-sm-6 col-xs-12" src="8323_1_s.jpg" alt="">
+              <img class="col-md-4 col-sm-6 col-xs-12" src="421806_1_f.jpg" alt="">
+              <img class="col-md-4 col-sm-6 col-xs-12" src="./assets/img1.jpg" alt="">
+          </div>
+          -->
+          <div class="line">
+              <img src="544585_1_f.jpg" alt="">
+              <img src="534386_1_f.jpg" alt="">
+          </div>
+          <div class="line">
+              <img src="8323_1_s.jpg" alt="">
+              <img src="421806_1_f.jpg" alt="">
+          </div>
+      </div>
+  </div>
+  <div class="section-best">
+      <div class="titre-best">
+
+      </div>
+      <div class="best-seller">
+          <div class="product-card col-sm-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+          <div class="product-card col-md-4">
+              <div class="product-image">
+                  <img src="534386_1_f.jpg">
+              </div>
+              <div class="product-info">
+                  <div class="icone-author">
+                      <div class="icone-change"></div>
+                      <div class="author"></div>
+                      <div class="favorite"></div>
+                  </div>
+                  <div class="art-description">
+                      <div class="nom-oeuvre"></div>
+                      <div class="dimension-reduction">
+                          <div class="dimension"></div>
+                          <div class="redux"></div>
+                      </div>
+                      <div class="type-prix">
+                          <div class="type"></div>
+                          <div class="prix"></div>
+                      </div>
+                  </div>
+                  <div class="similaire">
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
+    <!--  =========================================   site Body ==================================================== -->
+
+
+
+    <script src="./script/jquery-3.4.1.js"></script>
+    <script src="docs/hc-offcanvas-nav.js?ver=3.4.1"></script>
+    <script>
+        (function($) {
+            var $main_nav = $('#main-nav');
+            console.log($main_nav)
+            var $toggle = $('.toggle');
+
+            var defaultData = {
+                maxWidth: false,
+                customToggle: $toggle,
+                navTitle: '  ',
+                levelTitles: true,
+                pushContent: '#container',
+                insertClose: 2,
+                closeLevels: false
+            };
+
+            // add new items to original nav
+            $main_nav.find('li.add').children('a').on('click', function() {
+                var $this = $(this);
+                var $li = $this.parent();
+                var items = eval('(' + $this.attr('data-add') + ')');
+
+                $li.before('<li class="new"><a>'+items[0]+'</a></li>');
+
+                items.shift();
+
+                if (!items.length) {
+                    $li.remove();
+                }
+                else {
+                    $this.attr('data-add', JSON.stringify(items));
+                }
+
+                Nav.update(true);
+            });
+
+            // call our plugin
+            var Nav = $main_nav.hcOffcanvasNav(defaultData);
+
+            // demo settings update
+
+            const update = (settings) => {
+            if (Nav.isOpen()) {
+                Nav.on('close.once', function() {
+                Nav.update(settings);
+                Nav.open();
+                });
+
+                Nav.close();
+            }
+            else {
+                Nav.update(settings);
+            }
+            };
+
+            $('.actions').find('a').on('click', function(e) {
+                e.preventDefault();
+
+                var $this = $(this).addClass('active');
+                var $siblings = $this.parent().siblings().children('a').removeClass('active');
+                var settings = eval('(' + $this.data('demo') + ')');
+
+                update(settings);
+                });
+
+                $('.actions').find('input').on('change', function() {
+                    var $this = $(this);
+                    var settings = eval('(' + $this.data('demo') + ')');
+
+                if ($this.is(':checked')) {
+                    update(settings);
+                }
+                else {
+                    var removeData = {};
+                    $.each(settings, function(index, value) {
+                    removeData[index] = false;
+                    });
+
+                    update(removeData);
+                }
+            });
+        })(jQuery);
+    </script>
+    <script src="./script/script.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-ul{
+ul, ol{
     margin-bottom: 0;
 }
 
@@ -28,31 +28,36 @@ body {
     line-height: 22px;
     height: 100%;
     padding: 0;
-    max-height: 999999px;
     font-size: 14px;
     color: #000;
     font-family: Arial,sans-serif;
+    cursor: pointer;
 }
 /* Global setting */
 
 /* Header top */
+.panier{
+    position: absolute;
+    right: 70px;
+    top: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+.panier span {
+    cursor: pointer;
+}
+.hover1{
+    display: none;
+}
+
+.wrapper {
+    display: none;
+}
 
 .header-top {
     font-size: 12px;
     height: 39px;
     border-bottom: 1px solid #e6e6e6;
-}
-
-.divider {
-    height: 1px;
-    line-height: 0;
-}
-
-.divid{
-    height: 1px;
-    line-height: 0;
-    width: 190px;
-    background-color: #e6e6e6;
 }
 
 .pull-left{
@@ -79,7 +84,7 @@ ul, li {
 .header-top li.right .dropdown-menu {
     right: 0;
     left: inherit;
-    min-width: 190px;
+    min-width: 180px;
     top: 40px;
 }
 
@@ -98,7 +103,6 @@ ul, li {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    margin-top: -1px;
     min-width: 120px;
     padding: 10px 0;
     font-weight: bold;
@@ -360,11 +364,30 @@ header #navbar-main {
 .col-red {
     color: #ff5650 !important;
 }
+
+.menuHover {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    width: 150px;
+    top: 49px;
+    z-index: 2;
+}
+
+.wdth {
+    width: 150px;
+    text-align: center
+}
+.wdth ul li {
+    padding: 7px 20px;
+
+}
 /* Navbar main  */
 
 /* Dropdown- Menu  */
 #desktop-menu .container>ul>li .submenu {
-    display: block;
+    display: none;
     width: 1080px;
     margin-left: -540px;
     position: absolute;
@@ -374,12 +397,13 @@ header #navbar-main {
     background: #fff;
     border: 1px solid #e6e6e6;
 }
+
 #desktop-menu .container>ul>li .selection-menu {
     border-top: 1px solid #e6e6e6;
     padding: 20px 30px;
 }
 
-#desktop-menu .container>ul>li .submenu .main-menu { 
+#desktop-menu .container>ul>li .submenu .main-menu {
     float: left;
     width: 713px;
     padding: 40px;
@@ -482,8 +506,445 @@ header #navbar-main {
 }
 /* Dropdown- Menu  */
 
-/* Media query */
+.min-height-40 {
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    min-height: 40px;
+    color: white;
+    background-color: rgba(218, 225, 228, 0.33);
+    z-index: 1;
+}
+.padd-top-10 {
+    padding-top: 10px;
+    font-family: 'Apercu',Arial,sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.bold {
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+}
 
+.background-video>video {
+    object-fit: fill;
+    width: 100%;
+    height: 700px;
+}
+
+.preheader {
+    position: absolute;
+    top: 390px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    display: grid;
+}
+
+.preheader h1 {
+    text-shadow: 0 0 10px #7e7e7e;
+    font-size: 45px;
+    font-family: 'Apercubold',Arial,sans-serif;
+    margin-bottom: 40px;
+    color: #fff;
+    line-height: normal;
+}
+
+.preheader .btn{
+    border-radius: 3px;
+    display: block;
+    height: 40px;
+    line-height: 38px;
+    font-family: 'Apercubold',Arial,sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.white {
+    background-color: #fff;
+    color: #000;
+    width: 280px;
+}
+
+
+/****************************************
+              ///   BODY ///
+********************************************/
+
+.grid-container .right-col .bodycontain{
+    background-image: url(../assets/img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    cursor: pointer;
+}
+
+.grid-container .right-col .bodycontain .div1 .left{
+    padding: 30px 20px;
+    width: 65%;
+    color: #fff;
+    float: left;
+}
+.grid-container .right-col .bodycontain .div1 .right{
+    padding: 30px 70px;
+    color: #fff;
+    float: right;
+    margin-top: 5%;
+    font-size: 1em;
+}
+.grid-container .right-col .bodycontain .div1 .left h3{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+.grid-container .right-col .bodycontain .div1 .left h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.grid-container .right-col .bodycontain .div1 .left p{
+    font-size: 0.8em;
+    line-height: normal;
+}
+
+.grid-container .right-col .bodycontain .div1 .right a{
+    font-size: 1em;
+    color: #fff;
+}
+
+  /*
+.grid-container .left-col{
+    background-image: url(../assets/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    cursor: pointer;
+}*/
+
+
+
+/****************************************
+              ///   BODY ///
+********************************************
+
+
+
+/****************************************
+                    GRID
+********************************************/
+
+
+
+.grid-container {
+    margin: 0 15px;
+    /*
+  display: grid;
+  grid-template-columns: 27% 73%;
+  grid-template-rows: ;
+  grid-template-areas: "left-col right-col";*/
+}
+
+.left-col { grid-area: left-col; }
+
+.right-col { grid-area: right-col; }
+
+
+
+/****************************************
+                  Body Container
+********************************************/
+
+
+
+.section-exposition,
+.section-vogue{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.1vh 8vw;
+    margin-top: 5vh;
+}
+
+.section-vogue{
+    flex-direction: column;
+}
+
+.image-left{
+    flex-basis: 45%;
+    display: inline-flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    flex-basis: 55%;
+    display: inline-flex;
+    height: auto;
+    flex-direction: column;
+}
+
+.titre-desciption{
+    flex-grow: 1.5;
+    padding: 3vw;
+    line-height: 7vh;
+    font-size: Arial,sans-serif;
+    flex-direction: column;
+}
+
+.text-desciption{
+    flex-grow: 3;
+}
+
+
+.button-desciption{
+    flex-grow: 1.5;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.titre-vogue{
+    width: 100%;
+    line-height: 5vh;
+    padding: 1.2vw;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-artiste .line img{
+    flex-grow: 1;
+    margin: 0.33%;
+}
+
+.list-artiste .row{
+    padding:1.1vw;
+}
+
+.section-best{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.best-seller{
+    display: flex;
+    max-width: 100%;
+    margin: 1.1vh 8vw;
+    padding: 1.1vh 0 1.1vh 20vw;
+    margin-top: 3vh;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: center;
+}
+
+.product-card {
+    margin: 1%;
+    min-width: calc(100% / 4);
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    transform: translate(59vw);
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.product-image{
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-best{
+    margin: 1.1vh 8vw;
+    height: 10vh;
+}
+
+.art-description{
+    height: 10vh;
+}
+
+.icone-author,
+.similaire{
+    height: 7vh;
+}
+
+.product-image,
+.dimension-reduction,
+.type-prix,
+.icone-author{
+    display: flex;
+}
+
+.author{
+    flex-basis: 70%;
+}
+
+.favorite,
+.icone-change{
+    flex-basis: 15%;
+}
+
+.nom-oeuvre,
+.dimension-reduction,
+.type-prix{
+    height: calc(10vh /3);
+}
+
+.dimension,
+.type{
+    flex-basis: 70%;
+}
+
+.redux,
+.prix{
+    flex-basis: 30%;
+}
+
+/********************
+*********************
+   ##########
+   ##########
+   ###       ##
+   ###       ##
+   ##########
+   #########
+   ###
+   ###
+   ###
+********************
+********************/
+.titre-desciption .first h2,
+.titre-desciption .second p,
+.titre-desciption .third p{
+    margin: 0;
+    padding: 0;
+}
+
+.description .text-desciption{
+    padding: 1.5vw;
+}
+
+.titre-desciption .first h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 2vw;
+    font-family: 'Apercubold',Arial,sans-serif;
+}
+
+.titre-desciption,
+.description,
+.button-description{
+    display: flex;
+    padding: 1.5vw;
+    width: 100%;
+}
+
+.button-description{
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.button-description a:hover,
+.button-description a
+{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 10px 5px  0px 5px;
+}
+
+.titre{
+    font-size: 1.8vw;
+    text-overflow: ellipsis;
+    font-family: 'Apercubold','Arial','sans-serif';
+}
+
+.under-black,
+.under-black:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.under-black:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+
+.under-black:hover:after {
+    width: 100%;
+}
+/*
+.list-artiste .line:first-child img:first-child::after{
+    content: 'Takeru Amano';
+    transition: 300ms;
+    font-size: 24px;
+    transform: translate(20%,20%);
+    z-index: 100;
+    color: #000;
+}
+*/
+@media screen and (max-width:768px){
+    .section-exposition{
+        flex-direction: column;
+    }
+
+    .first h2{
+        font-size: 20px;
+    }
+}
+
+
+
+/****************************************
+                  Body Container
+********************************************/
+
+
+
+
+
+
+/****************************************
+                    GRID
+********************************************/
+
+
+/****************************************
+                    MEDIA QUERIE
+********************************************/
+
+/* Media query */
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 @media (min-width: 1200px){
     .container {
@@ -502,6 +963,38 @@ header #navbar-main {
         width: 1170px;
     }
 }
+@media(max-width: 1100px){
+    .header-top {
+        display: none;
+    }
+
+    #desktop-menu{
+        display: none;
+    }
+
+    .min-height-40{
+        top: 70px
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .preheader h1 {
+        font-size: 2em;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .preheader h1 {
+        font-size: 1em;
+    }
+}
+
+/****************************************
+                    MEDIA QUERIE
+********************************************/
 
 .col-sm-12, .col-sm-8, .col-sm-6, .col-sm-4, .col-sm-3, .col-xs-12, .col-xs-8, .col-xs-6, .col-xs-4, .col-xs-3 {
     padding-left: 10px;
