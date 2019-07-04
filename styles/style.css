@@ -284,7 +284,7 @@ header #navbar-main {
 .relative {
     position: relative;
 }
-
+/*
 .row {
     margin: 0;
 }
@@ -292,6 +292,8 @@ header #navbar-main {
     margin-right: -15px;
     margin-left: -15px;
 }
+
+*/
 #desktop-menu {
     position: absolute;
     top: 10px;
@@ -309,6 +311,7 @@ header #navbar-main {
     padding: 0 40px;
 }
 
+/*
 .container {
     max-width: 1020px;
     padding-left: 50px;
@@ -321,6 +324,7 @@ header #navbar-main {
     margin-right: auto;
     margin-left: auto;
 }
+*/
 
 #desktop-menu .container>ul {
     text-align: center;
@@ -572,106 +576,6 @@ header #navbar-main {
 }
 
 
-/****************************************
-              ///   BODY ///
-********************************************/
-
-.grid-container .right-col .bodycontain{
-    background-image: url(../assets/img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
-    cursor: pointer;
-}
-
-.grid-container .right-col .bodycontain .div1 .left{
-    padding: 30px 20px;
-    width: 65%;
-    color: #fff;
-    float: left;
-}
-.grid-container .right-col .bodycontain .div1 .right{
-    padding: 30px 70px;
-    color: #fff;
-    float: right;
-    margin-top: 5%;
-    font-size: 1em;
-}
-.grid-container .right-col .bodycontain .div1 .left h3{
-    font-size: 14px;
-    margin-bottom: 20px;
-    font-weight: 100;
-}
-.grid-container .right-col .bodycontain .div1 .left h1{
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-.grid-container .right-col .bodycontain .div1 .left p{
-    font-size: 0.8em;
-    line-height: normal;
-}
-
-.grid-container .right-col .bodycontain .div1 .right a{
-    font-size: 1em;
-    color: #fff;
-}
-
-  /*
-.grid-container .left-col{
-    background-image: url(../assets/img1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10px;
-    cursor: pointer;
-}*/
-
-
-
-/****************************************
-              ///   BODY ///
-********************************************
-
-
-
-/****************************************
-                    GRID
-********************************************/
-
-
-
-.grid-container {
-    margin: 0 15px;
-    /*
-  display: grid;
-  grid-template-columns: 27% 73%;
-  grid-template-rows: ;
-  grid-template-areas: "left-col right-col";*/
-}
-
-.left-col { grid-area: left-col; }
-
-.right-col { grid-area: right-col; }
-
-
-
-/****************************************
-                  Body Container
-********************************************/
-
-/********************
-*********************
-   ##########
-   ##########
-   ###       ##
-   ###       ##
-   ##########
-   #########
-   ###
-   ###
-   ###
-********************
-********************/
-
 
 /****************************************
                   Body Container
@@ -679,9 +583,10 @@ header #navbar-main {
 .test{
   text-align: center;
   width: 100%;
-  height: 200px;
+  height: 300px;
   margin-top: -6px;
   display: inline-grid;
+  background-image: linear-gradient(to top, rgba(255,255,255,1), rgb(179, 179, 179));
 }
 
 .icon{
@@ -703,10 +608,61 @@ header #navbar-main {
 
 .presentation {
   position: relative;
+  background-image: linear-gradient(rgb(255, 255, 255), #FFFFFA );
 }
 
 .section{
   padding: 40px 0
+}
+
+.presentation .section .container .row ul{
+  padding-bottom: 60px !important;
+}
+
+.presentation .section .container .row ul .pull-right {
+  font-weight: bolder;
+  font-size: small;
+}
+.presentation .section .container .row .content{
+  padding: 0px 35px;
+}
+
+.w100{
+  width: 100%
+}
+
+.presentation .section .container .row .content h2{
+  margin-bottom: 15px;
+}
+
+.date{
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #555;
+  display: block;
+  display: -webkit-box;
+  margin: 0 auto;
+  height: 150px;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn1.black1 {
+  margin-top: 60px;
+  border-radius: 2px;
+  display: block;
+  height: 40px;
+  line-height: 38px;
+  font-family: 'Apercubold',Arial,sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  background: #000;
+  color: #fff;
 }
 
 /****************************************
@@ -718,70 +674,7 @@ header #navbar-main {
                     GRID
 ********************************************/
 
-
-/****************************************
-                    MEDIA QUERIE
-********************************************/
-
-/* Media query */
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 1200px){
-    .container {
-        width: 1170px;
-    }
-}
-
-@media (min-width: 992px){
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 768px){
-    .container {
-        width: 1170px;
-    }
-}
-@media(max-width: 1100px){
-    .header-top {
-        display: none;
-    }
-
-    #desktop-menu{
-        display: none;
-    }
-
-    .min-height-40{
-        top: 70px
-    }
-
-    .wrapper {
-        display: block;
-    }
-
-    .preheader h1 {
-        font-size: 2em;
-    }
-
-}
-
-@media(max-width: 800px) {
-    .preheader h1 {
-        font-size: 1em;
-    }
-}
-
-/****************************************
-                    MEDIA QUERIE
-********************************************/
-
-.col-sm-12, .col-sm-8, .col-sm-6, .col-sm-4, .col-sm-3, .col-xs-12, .col-xs-8, .col-xs-6, .col-xs-4, .col-xs-3 {
+.col-sm-12, .col-sm-8, .col-sm-6, .col-sm-4, .col-sm-3, .col-xs-12, .col-xs-8, .col-xs-6, .col-xs-4, .col-xs-3, col-md-7, col-xs-12, col-sm-6 {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -796,6 +689,11 @@ header #navbar-main {
 .col-xs-3 {
     width: 25%;
 }
+
+.col-xs-12 {
+    width: 100%;
+}
+
 .col-xs-6 {
     width: 30%;
 }
@@ -803,13 +701,115 @@ header #navbar-main {
   width: 33%;
 }
 
+.container {
+    max-width: 1020px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin: 0;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     position: relative;
-    min-height: 1px;
+    width: 100%
     padding-right: 15px;
     padding-left: 15px;
 }
 .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     float: left;
 }
+/* Media query */
+    /* MEDIA QUERY */
+/* Media query */
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .col-md-7 {
+   -ms-flex: 0 0 58.333333%;
+   flex: 0 0 58.333333%;
+   max-width: 58.333333%;
+ }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .col-md-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+
+
+/* Media query */
+    /* MEDIA QUERY */
 /* Media query */
