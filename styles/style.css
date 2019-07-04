@@ -611,11 +611,15 @@ header #navbar-main {
 
 .presentation {
   position: relative;
+}
+
+.bg{
   background-image: linear-gradient(rgb(255, 255, 255), #FFFFFA );
 }
 
 .section{
-  padding: 40px 0
+  padding: 40px 0;
+  display: flex;
 }
 
 .presentation .section .container .row ul{
@@ -667,6 +671,13 @@ header #navbar-main {
   background: #000;
   color: #fff;
 }
+
+.third-title {
+    display: block;
+    font-family: Apercu;
+    margin-top: 10px;
+}
+
 
 /****************************************
                   Body Container
@@ -738,7 +749,27 @@ header #navbar-main {
 /* Media query */
     /* MEDIA QUERY */
 /* Media query */
+@media(max-width: 1100px){
+    .header-top {
+        display: none;
+    }
 
+    #desktop-menu{
+        display: none;
+    }
+
+    .min-height-40{
+        top: 70px
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .preheader h1 {
+        font-size: 2em;
+    }
+}
 
 @media (min-width: 576px) {
   .container {
