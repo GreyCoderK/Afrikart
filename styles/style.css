@@ -662,6 +662,14 @@ header #navbar-main {
                   Section Exposition
 ********************************************/
 
+.exposition-titre{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+    padding: 0vh 8vw 0.6vh 8vw;
+    margin-top: 5vh;
+}
 
 .section-exposition,
 .section-vogue{
@@ -678,7 +686,7 @@ header #navbar-main {
 }
 
 .image-left{
-    flex-basis: 45%;
+    flex-basis: 65%;
     display: inline-flex;
     height: auto;
     align-items: center;
@@ -690,7 +698,7 @@ header #navbar-main {
 }
 
 .description{
-    flex-basis: 55%;
+    flex-basis: 35%;
     display: inline-flex;
     height: auto;
     flex-direction: column;
@@ -873,10 +881,6 @@ header #navbar-main {
     margin-top: 3vh; 
 }
 .first-line .titre{
-    font-size: 5vw;
-}
-
-.first-line .titre{
     font-size: 3vw;
 }
 
@@ -956,6 +960,7 @@ header #navbar-main {
 ********************************************/
 
 /* Media query */
+
 @media screen and (max-width:1440px){
     .best-seller{
         margin-top: 5vh;

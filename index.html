@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700">
+    <!-- <link rel="stylesheet" href="./styles/bootstrap-grid.css"> -->
     <link rel="stylesheet" href="docs/demo.css?ver=3.4.0">
     <title>AfrikArt</title>
 
@@ -677,7 +678,7 @@
             </div>
 
           </div>
-          <a href="#" class="underline"><span class="animation"><b>En savoir plus</b></span></a>
+          <span  ><a href="#" class="underline"><span class="animation"><b>En savoir plus</b></span></a></span>
         </div>
     </div>
 
@@ -685,6 +686,10 @@
     <!--  =========================================   site Body ==================================================== -->
 
     <!--  =========================================   site Body ==================================================== -->
+    <div class="exposition-titre">
+        <div class="titre"><h1>Meilleures Ventes</h1></div>
+        <div class="voir-plus"><a href="#" class="underline under-black">Voir toutes les œuvres</a></div>
+    </div>
     <div class="section-exposition">
         <div class="image-left">
             <img src="./assets/img1.jpg">
@@ -1060,9 +1065,6 @@
         </div>
     </div>
     <!--  =========================================   site Body ==================================================== -->
-
-    <!--  =========================================   site Body ==================================================== -->
-
     <script src="./script/jquery-3.4.1.js"></script>
     <script src="docs/hc-offcanvas-nav.js?ver=3.4.1"></script>
     <script>
@@ -1147,30 +1149,6 @@
                 }
             });
         })(jQuery);
-        $(document).ready(function() {
-            $(".best-seller").on("slide.bs.carousel", function(e) {
-                var $e = $(e.relatedTarget);
-                var idx = $e.index();
-                var itemsPerSlide = 5;
-                var totalItems = $(".product-card").length;
-
-                if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-                    // append slides to end
-                    if (e.direction == "left") {
-                    $(".product-card")
-                        .eq(i)
-                        .appendTo(".best-seller");
-                    } else {
-                    $(".product-card")
-                        .eq(0)
-                        .appendTo($(this).find(".best-seller"));
-                    }
-                }
-                }
-            });
-        });
     </script>
     <script src="./script/script.js"></script>
 </body>
