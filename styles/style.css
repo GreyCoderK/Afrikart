@@ -686,7 +686,7 @@ header #navbar-main {
 }
 
 .image-left{
-    flex-basis: 65%;
+    flex-basis: 60%;
     display: inline-flex;
     height: auto;
     align-items: center;
@@ -698,7 +698,7 @@ header #navbar-main {
 }
 
 .description{
-    flex-basis: 35%;
+    flex-basis: 40%;
     display: inline-flex;
     height: auto;
     flex-direction: column;
@@ -830,12 +830,20 @@ header #navbar-main {
 }
 
 .icone-author{
+    height: 7vh;
     align-self: auto;
 }
 
+.prix,
+.redux{
+    text-align: right;
+}
+
 .icone-author,
-.similaire{
-    height: 7vh;
+.similaire,
+.redux,
+.nom-oeuvre{
+    text-align: center;
 }
 
 .product-image,
@@ -902,6 +910,10 @@ header #navbar-main {
 
 .under-black:hover:after {
     width: 100%;
+}
+
+.star{
+    max-height: 35% !important;
 }
 
 /****************************************
